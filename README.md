@@ -1,1 +1,1 @@
-# Python-ML-Final-Project
+This code predicts the value of the $SPY ticker (SPDR S&P 500 ETF). Why the SPY? The SPY is comprised of 500 large and mid capped companies. The ETF can be considered a an indicator for the rest of the stock market since it is comprised of stable growing stocks, thus it can be argued that if the SPY is not doing well for the day, the rest of the market may also be struggling (Since it is somewhat of a benchmark for the market, it can also be considered a gauge for investor confidence). 
