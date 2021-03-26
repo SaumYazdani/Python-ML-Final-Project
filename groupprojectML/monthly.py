@@ -22,6 +22,8 @@ def monthlyprediction():
 
     # apply linear regression on our fitted data
     reg = LinearRegression().fit(x_train, y_train)
+    # calculating r^2 accuracy score
+    print("R^2 is: ", reg.score(x_test, y_test))
     # setting data 2 to equal data values w/o predicted values - also removing the number of predicttime values
     data2 = data.drop(["Predicted_Close"], axis=1)[:-predicttime]
     # setting data2 = to tail length of predicttime
