@@ -4,11 +4,13 @@ def weeklyprediction():
     import pandas as pd
     import numpy as np
     from sklearn.linear_model import LinearRegression
+    from sklearn.neighbors import LocalOutlierFactor
+
 
     #Reading in data, and setting data to index
     data = pd.read_csv("spy weekly.csv")
     data.index = data['Date']
-    #redicttime is the number of days we want our model to predict -- set to around half the # our data
+    #predicttime is the number of days we want our model to predict -- set to around half the # our data
     predicttime = 5
     #setting data to only = adj close data
     data = data[["Adj Close"]]
@@ -18,7 +20,9 @@ def weeklyprediction():
     feature = np.array(data.drop(["Predicted_Close"], axis = 1))[:-predicttime]
     target = np.array(data['Predicted_Close'])[:-predicttime]
     #train test split data
-    x_train, x_test, y_train, y_test = train_test_split(feature, target, test_size = .33)
+    x_train, x_test, y_train, y_test = train_test_split(feature, target, test_size = .20)
+    lof = LocalOutlierFactor()
+    lof.fit_predict(x_train)  # remove local outliers
 
     #apply linear regression on our fitted data
     reg = LinearRegression().fit(x_train, y_train)

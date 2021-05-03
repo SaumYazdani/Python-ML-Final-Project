@@ -4,6 +4,8 @@ def monthlyprediction():
     import pandas as pd
     import numpy as np
     from sklearn.linear_model import LinearRegression
+    from sklearn.neighbors import LocalOutlierFactor
+
 
     # Reading in data, and setting data to index
     data = pd.read_csv("spy monthly")
@@ -18,7 +20,9 @@ def monthlyprediction():
     feature = np.array(data.drop(["Predicted_Close"], axis=1))[:-predicttime]
     target = np.array(data['Predicted_Close'])[:-predicttime]
     # train test split data
-    x_train, x_test, y_train, y_test = train_test_split(feature, target, test_size=.33)
+    x_train, x_test, y_train, y_test = train_test_split(feature, target, test_size=.15)#trying to allocate more data for training to improve accuracy -Connor
+    lof = LocalOutlierFactor()
+    lof.fit_predict(x_train)  # remove local outliers - Connor
 
     # apply linear regression on our fitted data
     reg = LinearRegression().fit(x_train, y_train)
