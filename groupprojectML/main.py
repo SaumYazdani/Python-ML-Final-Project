@@ -69,7 +69,7 @@ try:
         print("Download the requested stock data: " + url3 + "\n")
         annual.annualprediction(stocktick)
 
-#except statement will trigger if incorrect ticker is entered --- likely the case if api key above is not replaced
+##except statement will trigger if incorrect ticker is entered --- likely the case if api key above is not replaced
 except:
     print("Invalid ticker entered!\nRestarting the program!\n")
     #upon error, program essentially restarts

@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f5374d5-b0da-4db9-9d62-08a8bd78d208" name="Default Changelist" comment="" />
+    <list default="true" id="0f5374d5-b0da-4db9-9d62-08a8bd78d208" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/groupprojectML/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/groupprojectML/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
