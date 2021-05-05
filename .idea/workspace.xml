@@ -19,18 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f5374d5-b0da-4db9-9d62-08a8bd78d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/groupprojectML/replay.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/annual.py" beforeDir="false" afterPath="$PROJECT_DIR$/groupprojectML/annual.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/groupprojectML/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/monthly.py" beforeDir="false" afterPath="$PROJECT_DIR$/groupprojectML/monthly.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/spy annual" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/spy monthly" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/spy weekly.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/groupprojectML/weekly.py" beforeDir="false" afterPath="$PROJECT_DIR$/groupprojectML/weekly.py" afterDir="false" />
-    </list>
+    <list default="true" id="0f5374d5-b0da-4db9-9d62-08a8bd78d208" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
