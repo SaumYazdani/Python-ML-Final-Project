@@ -40,7 +40,7 @@ if ui == '3':
     enddate = todaysdate - timedelta(days=360)
     enddate = enddate.strftime("%Y-%m-%d")
     td = date.today().strftime("%Y-%m-%d")
-    url2 = '.US?api_token=6091ee932105a3.73891944&period=d&from=' + enddate + '&to=' + td
+    url2 = '.US?api_token=OeAFFmMliFG5orCUuwAKQ8l4WWFQ67YX&period=d&from=' + enddate + '&to=' + td
 
 #getting the user's desired stock ticker to predict data on -- must enter MCD unless api token is entered above
 stocktick = input("Please enter the stock ticker you would like to predict on. Example: SPY\n").upper()
